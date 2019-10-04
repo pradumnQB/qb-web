@@ -96,6 +96,10 @@ class Slider extends Component {
             </div>
         )
     }
+
+    componentDidMount() {
+        
+    }
 }
 
 

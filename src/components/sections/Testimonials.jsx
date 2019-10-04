@@ -10,9 +10,9 @@ import person_3 from '../../assets/images/person_3.png'
 class Testimonials extends Component {
     render() {
         return (
-            <div className='width-100' style={{padding:'60px 0', backgroundColor:"#f7f7f7"}}>
+            <div className='width-100' style={{padding:'60px 0 20px 0', backgroundColor:"#f7f7f7"}} id={'testimonials'}>
             <div className=''>
-                <div className='width-100 flex-column mg-bot-40'>
+                <div className='width-100 flex-column mg-bot-0'>
                     <label className="font-medium-30-dark">Some words from our clients</label>
                 </div>
 
@@ -20,71 +20,74 @@ class Testimonials extends Component {
                     showThumbs={false}
                     showIndicators={false}
                     showStatus={false}
-                    autoPlay={true}
+                    autoPlay={false}
                     infiniteLoop={true}
                     axis={"horizontal"}
                     emulateTouch={true}
                     centerMode
-                    centerSlidePercentage={33.34}
+                    centerSlidePercentage={100}
                     emulateTouch>
-                    <div className='flex-row' style={{flexDirection:'column' , alignItems:'center',}}>
-                        <img src={person_1}/>
-                        <div className="legend" id="legend">
-                            <p>
+                    <div style={{alignItems:'center', display: 'flex', backgroundColor: 'white', padding: '20px'}} className="test-li">
+                        <img src={person_1} style={{flexBasis: '30%', padding: '4%'}}/>
+                        <div style={{flexBasis: '70%'}}>
+                            <div style={{textAlign: 'left'}}>
+                                <span className='font-medium-16-dark'>
+                                    Melissa Dean
+                                </span>
+                                <br/>
+                                <label className='font-medium-16-light'>Business Manager, Shopprix Mart</label>
+                            </div>
+                            <p style={{textAlign: 'left'}}>
                                 Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero
                                 posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae
                                 est.
                             </p>
-                            <div>
-                                <span  className='font-medium-16-dark'>
-                                    Melissa Dean
-                                </span>
-                                <label className='font-medium-16-light'>Business Manager, Shopprix Mart</label>
-                            </div>
-
                         </div>
                     </div>
 
-                    <div className='flex-row' style={{flexDirection:'column' , alignItems:'center',}}>
-                        <img src={person_2}/>
-                        <div className="legend " id="legend">
-
-                            <p>
-                                Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero
-                                posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae
-                                est.
-                            </p>
-                            <div>
+                    <div style={{alignItems:'center', display: 'flex', backgroundColor: 'white', padding: '20px'}} className="test-li">
+                        <img src={person_2} style={{flexBasis: '30%', padding: '4%'}}/>
+                        <div style={{flexBasis: '70%'}}>
+                            <div style={{textAlign: 'left'}}>
                                 <span className='font-medium-16-dark'>
                                     Kenneth Stanley
                                 </span>
-                                <label className='font-medium-16-light'>Staff, Creame Bell</label>
+                                <br/>
+                                <label className='font-medium-16-light'>Business Manager, Shopprix Mart</label>
                             </div>
-
-                        </div>
-                    </div>
-
-                    <div className='flex-row' style={{flexDirection:'column' , alignItems:'center',}}>
-                        <img src={person_3}/>
-                        <div className="legend " id="legend">
-                            <p>
+                            <p style={{textAlign: 'left'}}>
                                 Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero
                                 posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae
                                 est.
                             </p>
-                            <div>
-                                <span  className='font-medium-16-dark'>
+                        </div>
+                    </div>
+
+                    <div style={{alignItems:'center', display: 'flex', backgroundColor: 'white', padding: '20px'}} className="test-li">
+                        <img src={person_3} style={{flexBasis: '30%', padding: '4%'}}/>
+                        <div style={{flexBasis: '70%'}}>
+                            <div style={{textAlign: 'left'}}>
+                                <span className='font-medium-16-dark'>
                                     Linda Bennett
                                 </span>
-                                <label className='font-medium-16-light'>CTO, Celucose Ltd.</label>
+                                <br/>
+                                <label className='font-medium-16-light'>Business Manager, Shopprix Mart</label>
                             </div>
-
+                            <p style={{textAlign: 'left'}}>
+                                Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero
+                                posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae
+                                est.
+                            </p>
                         </div>
                     </div>
                 </Carousel>
             </div>
             </div>
         )
+    }
+
+    componentDidMount() {
+        document.querySelector('#testimonials .carousel').style.marginTop = '0px !important'
     }
 }
 

@@ -1,42 +1,40 @@
-.carousel-slider{
-    height: 350px;
-}
-
-.slider-wrapper{
-    width: 70% !important;
-    height: -webkit-fill-available;
-
-}
-
-.slider{
-    display: flex;
-    margin-right: 20px;
-    align-items: center;
-    height: -webkit-fill-available;
-}
-
-.slide{
-    background: #f7f7f7 !important;
-    height: -webkit-fill-available;
-    display: flex;
-    align-items: center;
-}
-
-#legend{
-    text-align: center;
-    top:50%;
-    p{
-        font-size: 14px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.43;
-        letter-spacing: -0.3px;
-        text-align: center;
-
+#testimonials {
+    .carousel-slider{
+        height: 350px;
     }
-    div{
-       display: flex;
-       flex-direction: column;
+    
+    .slider{
+        display: flex;
+        margin-right: 20px;
+        align-items: flex-start;
+        height: fit-content;
+        padding-top: 22px;
+        padding-bottom: 32px;
+    }
+
+    .slider-wrapper {
+        height: fit-content !important;
+    }
+    
+    .slide{
+        background: #f7f7f7 !important;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+    }
+    
+    .test-li {
+        font-size: 14px;
+        width: 80%;
+    }
+    
+    .carousel .slide img {
+        width: 120px !important;
+        margin-bottom: 15px;
+    }
+    
+    .carousel {
+        margin-top: 0 !important; 
+        height: fit-content !important;
     }
 }

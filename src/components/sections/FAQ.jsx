@@ -9,41 +9,33 @@ class FAQ extends Component {
 
     qList = [
         {
-            q: 'Is there any setup fee?',
+            q: 'How long does it take to setup Queuebuster?',
             a: 'Yes. Write to us at support@queuebuster.co with any feature request.',
             id: '1'
         }, {
-            q: 'Do you offer any discounted plans?',
+            q: 'Do I need any hardware device(s)?',
             a: 'Yes. Write to us at support@queuebuster.co with any feature request.',
             id: '2'
         }, {
-            q: 'Do I need to give payment details to sign up?',
+            q: 'Can I receive payments by cards using Queuebuster?',
             a: 'Yes. Write to us at support@queuebuster.co with any feature request.',
             id: '3'
-        }, {
-            q: 'Can I change my plan later on?',
-            a: 'Yes. Write to us at support@queuebuster.co with any feature request.',
-            id: '4'
         }
     ]
 
     qList2 = [
         {
-            q: 'Is there any setup fee?',
+            q: 'Can you help me to setup my business on Queuebuster?',
             a: 'Yes. Write to us at support@queuebuster.co with any feature request.',
             id: '11'
         }, {
-            q: 'Do you offer any discounted plans?',
+            q: 'Do I need any additional software?',
             a: 'Yes. Write to us at support@queuebuster.co with any feature request.',
             id: '22'
         }, {
-            q: 'Do I need to give payment details to sign up?',
+            q: 'I have a machine to accept card payments. Can I still use it?',
             a: 'Yes. Write to us at support@queuebuster.co with any feature request.',
             id: '33'
-        }, {
-            q: 'Can I change my plan later on?',
-            a: 'Yes. Write to us at support@queuebuster.co with any feature request.',
-            id: '44'
         }
     ]
     setTouched = (e) => {
@@ -59,6 +51,7 @@ class FAQ extends Component {
     }
 
     renderQList() {
+        let self = this;
         var qArray = this
             .qList
             .map((m, i) => {
@@ -71,15 +64,12 @@ class FAQ extends Component {
                             aria-expanded="true"
                             aria-controls="collapseOne"
                             id={'q' + m.id}
-                            onClick={this.setTouched}
-                            style={{
-                            fontWeight: '500'
-                        }}>
-                            {m.q}
-                            <span className='float-right'>
-                                {this.state[`${ 'q' + m.id}`]
-                                    ? <img src={minus} id={'q' + m.id}/>
-                                    : <img src={plus} id={'q' + m.id}/>}
+                            onClick={this.setTouched}>
+                            <span style={{fontWeight: 'bolder', marginRight: '8px'}}>{m.q}</span>
+                            <span className='float-right' disabled>
+                                {self.state[`${ 'q' + m.id}`]
+                                    ? <img src={minus} id={'q' + m.id} disabled/>
+                                    : <img src={plus} id={'q' + m.id} disabled/>}
                             </span>
                         </div>
                         <div
@@ -115,15 +105,12 @@ class FAQ extends Component {
                             aria-expanded="true"
                             aria-controls="collapseOne"
                             id={'q' + m.id}
-                            onClick={this.setTouched}
-                            style={{
-                            fontWeight: '500'
-                        }}>
-                            {m.q}
-                            <span className='float-right'>
+                            onClick={this.setTouched}>
+                            <span style={{fontWeight: 'bolder', marginRight: '8px'}}>{m.q}</span>
+                            <span className='float-right' disabled>
                                 {this.state[`${ 'q' + m.id}`]
-                                    ? <img src={minus} id={'q' + m.id}/>
-                                    : <img src={plus} id={'q' + m.id}/>}
+                                    ? <img src={minus} id={'q' + m.id} disabled/>
+                                    : <img src={plus} id={'q' + m.id} disabled/>}
                             </span>
                         </div>
                         <div

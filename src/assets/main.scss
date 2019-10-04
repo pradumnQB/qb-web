@@ -37,6 +37,14 @@ button {
     background-color: $white;
     flex-wrap: nowrap;
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+
+    li {
+        cursor: pointer;
+    }
+
+    a {
+        color: black
+    }
 }
 
 .fixed-header {
@@ -44,4 +52,13 @@ button {
     width: 100vw;
     top: 0px;
     z-index: 999;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+    border-top: 7px solid #555;
+    margin-left: 6px;
 }

@@ -1,0 +1,38 @@
+#schedule_demo {
+    height: fit-content;
+    text-align: center;
+    padding: 40px 0 80px 0;
+
+    h4 {
+        font-weight: bolder;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+
+    input {
+        margin: 1%;
+        height: 48px;
+        border-radius: 4px;
+        border: solid 1px #d8d8d8;
+    }
+
+    button {
+        margin: auto;
+        margin-top: 1%;
+        width: 190px;
+        height: 50px;
+        border-radius: 4px;
+        background-color: #212b36;
+        color: white;
+        border: none
+    }
+
+    ::placeholder {
+        color: #acb3ba;
+    }
+}

@@ -1,0 +1,52 @@
+#start_trial_top {
+    color: white;
+    background-color: #00000000;
+    position: relative;
+    height: 391px;
+    padding: 100px 100px 0 100px;
+
+    h4 {
+        font-weight: bolder;
+    }
+
+    span {
+        display: inline-block;
+        font-size: 19px;
+        width: 44%;
+    }
+
+    img {
+        height: 391px;
+        position: absolute;
+        top: 31px;
+        right: 0;
+    }
+
+    div {
+        margin-top: 27px;
+
+        button:first-child {
+            background-color: #00000000;
+            height: 43px;
+            width: 191px;
+            border-radius: 5px;
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            border: solid 2px white;
+            margin-right: 10px;
+        }
+
+        button:last-child {
+            height: 43px;
+            width: 191px;
+            border-radius: 5px;
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            margin-right: 10px;
+            background-color: black;
+            border: none;
+        }
+    }
+}

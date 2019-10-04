@@ -1,0 +1,30 @@
+#enterprise_solutions {
+    .ss-div {
+        display: flex;
+        padding: 80px 100px;
+        align-items: center;
+
+        h5 {
+            font-weight: bolder;
+        }
+
+        h5+p {
+            font-weight: 300;
+            font-size: 13px;
+        }
+
+        ul {
+            padding-left: 20px;
+
+            p:first-child {
+                font-weight: bold;
+                margin: 0;
+            }
+
+            p:last-child {
+                font-size: 13px;
+                font-weight: 300;
+            }
+        }
+    }   
+}

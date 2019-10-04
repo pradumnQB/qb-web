@@ -31,11 +31,21 @@
 }
 
 .carousel .slide img{
-// width: 50%  !important;
-height: 100% !important;
+width: 100%  !important;
+// height: 525px !important;
+}
+
+.carousel {
+    margin-top: 68px !important;
+    height: 500px !important;
 }
 
 .control-dots{
     padding: 0 !important;
     text-align: left !important;
+}
+
+.slider-wrapper{
+    width: 90% !important;
+    height: 500px !important;
 }
